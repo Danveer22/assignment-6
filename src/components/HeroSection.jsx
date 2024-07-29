@@ -36,6 +36,7 @@ const HeaderContent = styled.div`
     margin-left: 0;
     width: 100%;
     gap: 4rem;
+    padding: 0 0.6rem;
   }
 `;
 
@@ -51,7 +52,8 @@ const StyledImg = styled.div`
 
   @media (max-width: 768px) {
     background-image: url(${imageHeroMobile});
-    height: auto;
+    height: 12rem;
+
     grid-row: 1 / 2;
     justify-self: center;
     width: 65%;
@@ -63,18 +65,22 @@ const StyledImg = styled.div`
 const ContentDiv = styled.div`
   margin-left: 3rem;
 
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+
   h1 {
     font-size: 4.8rem;
     margin-bottom: 2rem;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
 
     span {
       display: block;
       @media (max-width: 768px) {
         display: inline;
       }
-    }
-    @media (max-width: 768px) {
-      font-size: 3.2rem;
     }
   }
   p {
@@ -85,6 +91,8 @@ const ContentDiv = styled.div`
     margin-bottom: 2rem;
     color: var(--color-grey);
     @media (max-width: 768px) {
+      width: 100%;
+      font-size: 1.1rem;
       width: 100%;
     }
   }
@@ -113,11 +121,11 @@ const StyledIcons = styled.div`
   margin-left: 3rem;
 
   @media (max-width: 768px) {
-    gap: 1.2rem;
+    gap: 1rem;
     margin: 0 auto;
 
     img {
-      width: 5rem;
+      width: 4rem;
     }
   }
 `;
