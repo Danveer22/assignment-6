@@ -112,9 +112,13 @@ const StyledIcons = styled.div`
   gap: 1.8rem;
   margin-left: 3rem;
 
-  background-color: orange;
   @media (max-width: 768px) {
     gap: 1.2rem;
+    margin: 0 auto;
+
+    img {
+      width: 5rem;
+    }
   }
 `;
 
