@@ -51,9 +51,12 @@ const StyledImg = styled.div`
 
   @media (max-width: 768px) {
     background-image: url(${imageHeroMobile});
+    height: auto;
     grid-row: 1 / 2;
-    width: 90%;
+    justify-self: center;
+    width: 65%;
     margin-top: 1rem;
+    justify-self: center;
   }
 `;
 
@@ -108,9 +111,10 @@ const StyledIcons = styled.div`
   align-items: center;
   gap: 1.8rem;
   margin-left: 3rem;
+
+  background-color: orange;
   @media (max-width: 768px) {
-    width: 60%;
-    margin: 0 auto;
+    gap: 1.2rem;
   }
 `;
 
